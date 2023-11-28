@@ -19,6 +19,7 @@
 		15C975EC2B16238B0095BF78 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 15C975EB2B16238B0095BF78 /* SnapKit */; };
 		15C975F22B162B130095BF78 /* Dovemayo_gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15C975F12B162B130095BF78 /* Dovemayo_gothic.ttf */; };
 		15C975F52B162B400095BF78 /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C975F42B162B400095BF78 /* Font+.swift */; };
+		15C975F82B162EB70095BF78 /* MakeRollingPaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C975F72B162EB70095BF78 /* MakeRollingPaperView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		15C975E82B16214B0095BF78 /* ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
 		15C975F12B162B130095BF78 /* Dovemayo_gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dovemayo_gothic.ttf; sourceTree = "<group>"; };
 		15C975F42B162B400095BF78 /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
+		15C975F72B162EB70095BF78 /* MakeRollingPaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeRollingPaperView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		15C975DD2B161E030095BF78 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				15C975F62B162EA30095BF78 /* MakeRollingPaper */,
 				15C975DE2B161E0D0095BF78 /* Landing */,
 			);
 			path = Scene;
@@ -154,6 +157,14 @@
 				15C975F42B162B400095BF78 /* Font+.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		15C975F62B162EA30095BF78 /* MakeRollingPaper */ = {
+			isa = PBXGroup;
+			children = (
+				15C975F72B162EB70095BF78 /* MakeRollingPaperView.swift */,
+			);
+			path = MakeRollingPaper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +250,7 @@
 				15C975E52B161E460095BF78 /* Exmaple.swift in Sources */,
 				15C975E02B161E170095BF78 /* LandingView.swift in Sources */,
 				15C975CD2B161D910095BF78 /* ViewController.swift in Sources */,
+				15C975F82B162EB70095BF78 /* MakeRollingPaperView.swift in Sources */,
 				15C975C92B161D910095BF78 /* AppDelegate.swift in Sources */,
 				15C975CB2B161D910095BF78 /* SceneDelegate.swift in Sources */,
 			);

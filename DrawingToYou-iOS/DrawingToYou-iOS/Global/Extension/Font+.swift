@@ -10,6 +10,7 @@ import SwiftUI
 extension Font {
     enum Style {
         case heading1
+        case heading2
         case body1
         case caption1
         
@@ -17,6 +18,8 @@ extension Font {
             switch self {
             case .heading1:
                 return 21
+            case .heading2:
+                return 18
             case .body1:
                 return 16
             case .caption1:
