@@ -15,6 +15,10 @@
 		15C975D52B161D920095BF78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C975D32B161D920095BF78 /* LaunchScreen.storyboard */; };
 		15C975E02B161E170095BF78 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C975DF2B161E170095BF78 /* LandingView.swift */; };
 		15C975E52B161E460095BF78 /* Exmaple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C975E42B161E460095BF78 /* Exmaple.swift */; };
+		15C975E92B16214B0095BF78 /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C975E82B16214B0095BF78 /* ScreenSize.swift */; };
+		15C975EC2B16238B0095BF78 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 15C975EB2B16238B0095BF78 /* SnapKit */; };
+		15C975F22B162B130095BF78 /* Dovemayo_gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15C975F12B162B130095BF78 /* Dovemayo_gothic.ttf */; };
+		15C975F52B162B400095BF78 /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C975F42B162B400095BF78 /* Font+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,9 @@
 		15C975D62B161D920095BF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15C975DF2B161E170095BF78 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		15C975E42B161E460095BF78 /* Exmaple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exmaple.swift; sourceTree = "<group>"; };
+		15C975E82B16214B0095BF78 /* ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
+		15C975F12B162B130095BF78 /* Dovemayo_gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dovemayo_gothic.ttf; sourceTree = "<group>"; };
+		15C975F42B162B400095BF78 /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C975EC2B16238B0095BF78 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +68,8 @@
 		15C975C72B161D910095BF78 /* DrawingToYou-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				15C975EF2B162AEE0095BF78 /* Resource */,
+				15C975E62B1621350095BF78 /* Global */,
 				15C975E22B161E360095BF78 /* Domain */,
 				15C975DD2B161E030095BF78 /* Scene */,
 				15C975C82B161D910095BF78 /* AppDelegate.swift */,
@@ -105,6 +115,47 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		15C975E62B1621350095BF78 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				15C975F32B162B380095BF78 /* Extension */,
+				15C975E72B16213A0095BF78 /* Util */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		15C975E72B16213A0095BF78 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				15C975E82B16214B0095BF78 /* ScreenSize.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		15C975EF2B162AEE0095BF78 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				15C975F02B162AF30095BF78 /* Font */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		15C975F02B162AF30095BF78 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				15C975F12B162B130095BF78 /* Dovemayo_gothic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		15C975F32B162B380095BF78 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				15C975F42B162B400095BF78 /* Font+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,6 +172,9 @@
 			dependencies = (
 			);
 			name = "DrawingToYou-iOS";
+			packageProductDependencies = (
+				15C975EB2B16238B0095BF78 /* SnapKit */,
+			);
 			productName = "DrawingToYou-iOS";
 			productReference = 15C975C52B161D910095BF78 /* DrawingToYou-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -149,6 +203,9 @@
 				Base,
 			);
 			mainGroup = 15C975BC2B161D910095BF78;
+			packageReferences = (
+				15C975EA2B16238B0095BF78 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 15C975C62B161D910095BF78 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -163,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C975F22B162B130095BF78 /* Dovemayo_gothic.ttf in Resources */,
 				15C975D52B161D920095BF78 /* LaunchScreen.storyboard in Resources */,
 				15C975D22B161D920095BF78 /* Assets.xcassets in Resources */,
 				15C975D02B161D910095BF78 /* Main.storyboard in Resources */,
@@ -176,6 +234,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C975F52B162B400095BF78 /* Font+.swift in Sources */,
+				15C975E92B16214B0095BF78 /* ScreenSize.swift in Sources */,
 				15C975E52B161E460095BF78 /* Exmaple.swift in Sources */,
 				15C975E02B161E170095BF78 /* LandingView.swift in Sources */,
 				15C975CD2B161D910095BF78 /* ViewController.swift in Sources */,
@@ -403,6 +463,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		15C975EA2B16238B0095BF78 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		15C975EB2B16238B0095BF78 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15C975EA2B16238B0095BF78 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 15C975BD2B161D910095BF78 /* Project object */;
 }
